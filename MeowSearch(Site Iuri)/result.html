@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function change(){
+            let text = document.getElementById("pesquisa");
+            text.value = localStorage.getItem("pesquisa");
+        }
+    </script>
+</head>
+<body onload="change()">
+
+    <div class="top">
+        <img src="icons/logo.png" alt="logo" id="logo">
+        <center>
+            <div id="searchCamp">
+                <div id="interSearchCamp">
+                    <img onclick="redirect()" id="icon-search" src="icons/search-icon.png" alt="icone de pesquisa">
+                    <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquise no MEOW ou digite uma URL">
+                    <img id="icon-microfone" src="icons/microphone-icon.png" alt="icone de microfone">
+                </div>
+            </div>
+        </center>
+    </div>
+    <div class="result" id="result">
+        <h1>Resultado da pesquisa</h1>
+        <h4>lorem psum endom casum lendo coisas que nao fazem sentido mas que sao legais</h4>
+
+        <h1>Resultado da pesquisa</h1>
+        <h4>lorem psum endom casum lendo coisas que nao fazem sentido mas que sao legais</h4>
+
+        <h1>Resultado da pesquisa</h1>
+        <h4>lorem psum endom casum lendo coisas que nao fazem sentido mas que sao legais</h4>
+
+        <h1>Resultado da pesquisa</h1>
+        <h4>lorem psum endom casum lendo coisas que nao fazem sentido mas que sao legais</h4>
+
+        <h1>Resultado da pesquisa</h1>
+        <h4>lorem psum endom casum lendo coisas que nao fazem sentido mas que sao legais</h4>
+
+        <h1>Resultado da pesquisa</h1>
+        <h4>lorem psum endom casum lendo coisas que nao fazem sentido mas que sao legais</h4>
+
+        <h1>Resultado da pesquisa</h1>
+        <h4>lorem psum endom casum lendo coisas que nao fazem sentido mas que sao legais</h4>
+    </div>
+
+    
+</body>
+</html>

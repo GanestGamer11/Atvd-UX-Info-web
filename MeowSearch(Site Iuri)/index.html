@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meow</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+        document.addEventListener('keypress', function(e){
+        if(e.which == 13){
+            redirect();
+        }
+        });
+        
+        function redirect(){
+            let text = document.getElementById("pesquisa").value;
+            if(text != ''){
+                localStorage.setItem("pesquisa", text);
+                window.location.href = "result.html";
+            }
+                
+        }
+    </script>
+
+</head>
+<body>
+
+    <div class="body">
+        <center>
+            <img src="icons/logo.png" alt="logo" id="logo">
+            <div id="searchCamp">
+                <div id="interSearchCamp">
+                    <img onclick="redirect()" id="icon-search" src="icons/search-icon.png" alt="icone de pesquisa">
+                    <input type="text" name="pesquisa" id="pesquisa" placeholder="Pesquise no MEOW ou digite uma URL">
+                    <img id="icon-microfone" src="icons/microphone-icon.png" alt="icone de microfone">
+                </div>
+            </div>
+        </center>
+    </div>
+    <div class="bottom">
+        <h5 style="text-align: center; font-family: Arial; margin-top: 20px;">Anuncios</h5>
+        <div class="anuncios">
+            <div id="add1">
+                <img src="adds/add1.jpg" alt="anuncio">
+                <a href="https://www.mercadolivre.com.br/">MELHORES DESCONTOS E OFERTAS PARA VOCÊ CONSUMIDOR - MERCADO LIVRE</a>
+            </div>
+            <div id="add2">
+                <img src="adds/add2.png" alt="anuncio">
+                <a href="netflix.com/br/">SEGUNDO MELHOR APP DE TV E STREAMING</a>
+            </div>
+            <div id="add3">
+                <img src="adds/add3.jpg" alt="anuncio">
+                <a href="https://www.amazon.com.br/prime?tag=hydrbrgk-20&hvadid=558659969220&hvpos=&hvexid=&hvnetw=g&hvrand=17931465967191560160&hvpone=&hvptwo=&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9047717&hvtargid=kwd-303629226711&ref=pd_sl_1fzgdkimdg_e">MELHOR APP DE TV E STREAMING DE TODOS </a>
+            </div>
+        </div>
+    </div>
+    <div class="author">
+        <center>
+            <a href="https://github.com/ganestgamer11">This page has made for me - Ganestgamer11 (Glaucyrlei)</a>
+        </center>
+    </div>
+    
+</body>
+</html>
